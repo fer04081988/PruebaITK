@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+
+    <link rel="stylesheet" type="text/css" href="../vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+
+
+    <style type="text/css">
+        @media (min-width: 768px) {
+
+
+            /* farthest right hidden item must be abso position for animations */
+            .carousel-inner .carousel-item-prev.carousel-item-right {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                display: block;
+                visibility: visible;
+            }
+
+            .carousel-inner .carousel-item-next,
+            .carousel-inner .carousel-item-prev
+                {
+                position: relative;
+                transform: translate3d(0, 0, 0);
+            }
+
+
+
+            /* show 3 items */
+            .carousel-inner-3 .active,
+            .carousel-inner-3 .active+.carousel-item,
+            .carousel-inner-3 .active+.carousel-item+.carousel-item {
+                display: block;
+            }
+
+            .carousel-inner-3 .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+            .carousel-inner-3 .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
+            .carousel-inner-3 .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item {
+                transition: none;
+            }
+
+            .carousel-inner-3 .active.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+                position: absolute;
+                top: 0;
+                right: -33%;
+                z-index: -1;
+                display: block;
+                visibility: visible;
+            }
+
+            /* show 4 items */
+            .carousel-inner-4 .active,
+            .carousel-inner-4 .active+.carousel-item,
+            .carousel-inner-4 .active+.carousel-item+.carousel-item,
+            .carousel-inner-4 .active+.carousel-item+.carousel-item+.carousel-item {
+                display: block;
+            }
+
+            .carousel-inner-4 .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+            .carousel-inner-4 .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
+            .carousel-inner-4 .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item,
+            .carousel-inner-4 .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item {
+                transition: none;
+            }
+
+            .carousel-inner-4 .active.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+                position: absolute;
+                top: 0;
+                right: -25%;
+                z-index: -1;
+                display: block;
+                visibility: visible;
+            }
+
+
+
+            /* show 6 items */
+            .carousel-inner-6 .active,
+            .carousel-inner-6 .active+.carousel-item,
+            .carousel-inner-6 .active+.carousel-item+.carousel-item,
+            .carousel-inner-6 .active+.carousel-item+.carousel-item+.carousel-item,
+            .carousel-inner-6 .active+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+                display: block;
+            }
+
+            .carousel-inner-6 .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+            .carousel-inner-6 .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
+            .carousel-inner-6 .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item,
+            .carousel-inner-6 .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item,
+            .carousel-inner-6 .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+                transition: none;
+            }
+
+            .carousel-inner-6 .active.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+                position: absolute;
+                top: 0;
+                right: -16.6%;
+                z-index: -1;
+                display: block;
+                visibility: visible;
+            }
+
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        AUTOSERVICIO
+        <div class="container-fluid">
+            <div id="carouselExampleAS" class="carousel slide" data-ride="carousel" data-interval="9000">
+                <div class="carousel-inner carousel-inner-3 row w-100 mx-auto" role="listbox">
+                    <div class="carousel-item col-md-4 active">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400/000/fff?text=1"
+                            alt="slide 1">
+                    </div>
+                    <div class="carousel-item col-md-4">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=2" alt="slide 2">
+                    </div>
+                    <div class="carousel-item col-md-4">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=3" alt="slide 3">
+                    </div>
+                    <div class="carousel-item col-md-4">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=4" alt="slide 4">
+                    </div>
+                    <div class="carousel-item col-md-4">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=5" alt="slide 5">
+                    </div>
+                    <div class="carousel-item col-md-4">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=6" alt="slide 6">
+                    </div>
+                    <div class="carousel-item col-md-4">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=7" alt="slide 7">
+                    </div>
+                    <div class="carousel-item col-md-4">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=8" alt="slide 7">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleAS" role="button" data-slide="prev">
+                    <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next text-faded" href="#carouselExampleAS" role="button" data-slide="next">
+                    <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <br>
+        <hr><br>
+        FORMATO
+        <div class="container-fluid">
+            <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
+                <div class="carousel-inner carousel-inner-4 row w-100 mx-auto" role="listbox">
+                    <div class="carousel-item col-md-3 active">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400/000/fff?text=1"
+                            alt="slide 1">
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=2" alt="slide 2">
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=3" alt="slide 3">
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=4" alt="slide 4">
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=5" alt="slide 5">
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=6" alt="slide 6">
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=7" alt="slide 7">
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=8" alt="slide 7">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                    <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+                    <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <br>
+        <hr><br>
+        ZONA
+        <div class="container-fluid">
+            <div id="carouselExampleZN" class="carousel slide" data-ride="carousel" data-interval="9000">
+                <div class="carousel-inner carousel-inner-6 row w-100 mx-auto" role="listbox">
+                    <div class="carousel-item col-md-2 active">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400/000/fff?text=1"
+                            alt="slide 1">
+                    </div>
+                    <div class="carousel-item col-md-2">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=2" alt="slide 2">
+                    </div>
+                    <div class="carousel-item col-md-2">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=3" alt="slide 3">
+                    </div>
+                    <div class="carousel-item col-md-2">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=4" alt="slide 4">
+                    </div>
+                    <div class="carousel-item col-md-2">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=5" alt="slide 5">
+                    </div>
+                    <div class="carousel-item col-md-2">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=6" alt="slide 6">
+                    </div>
+                    <div class="carousel-item col-md-2">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=7" alt="slide 7">
+                    </div>
+                    <div class="carousel-item col-md-2">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=8" alt="slide 7">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleZN" role="button" data-slide="prev">
+                    <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next text-faded" href="#carouselExampleZN" role="button" data-slide="next">
+                    <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <br>
+        <hr><br>
+        TIENDA
+        <div class="container-fluid">
+            <div id="carouselExampleTD" class="carousel slide" data-ride="carousel" data-interval="9000">
+                <div class="carousel-inner carousel-inner-6 row w-100 mx-auto" role="listbox">
+                    <div class="carousel-item col-md-2 active">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400/000/fff?text=1"alt="slide 1">
+                    </div>
+                    <div class="carousel-item col-md-2">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=2" alt="slide 2">
+                    </div>
+                    <div class="carousel-item col-md-2">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=3" alt="slide 3">
+                    </div>
+                    <div class="carousel-item col-md-2">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=4" alt="slide 4">
+                    </div>
+                    <div class="carousel-item col-md-2">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=5" alt="slide 5">
+                    </div>
+                    <div class="carousel-item col-md-2">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=6" alt="slide 6">
+                    </div>
+                    <div class="carousel-item col-md-2">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=7" alt="slide 7">
+                    </div>
+                    <div class="carousel-item col-md-2">
+                        <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400?text=8" alt="slide 7">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleTD" role="button" data-slide="prev">
+                    <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next text-faded" href="#carouselExampleTD" role="button" data-slide="next">
+                    <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+<BR><BR><BR>
+
+    </div>
+
+
+
+    <script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../vendor/bootstrap/popper.js"></script>
+    <script src="../vendor/bootstrap/bootstrap.min.js"></script>
+    <script>
+
+        $('#carouselExampleAS').on('slide.bs.carousel', function (e) {
+
+            var $e = $(e.relatedTarget);
+            var idx = $e.index();
+            var itemsPerSlide = 3;
+            var totalItems = $('.carousel-item').length;
+
+            if (idx >= totalItems - (itemsPerSlide - 1)) {
+                var it = itemsPerSlide - (totalItems - idx);
+                for (var i = 0; i < it; i++) {
+                    // append slides to end
+                    if (e.direction == "left") {
+                        $('.carousel-item').eq(i).appendTo('.carousel-inner');
+                    }
+                    else {
+                        $('.carousel-item').eq(0).appendTo('.carousel-inner');
+                    }
+                }
+            }
+        });
+
+        $('#carouselExample').on('slide.bs.carousel', function (e) {
+
+            var $e = $(e.relatedTarget);
+            var idx = $e.index();
+            var itemsPerSlide = 4;
+            var totalItems = $('.carousel-item').length;
+
+            if (idx >= totalItems - (itemsPerSlide - 1)) {
+                var it = itemsPerSlide - (totalItems - idx);
+                for (var i = 0; i < it; i++) {
+                    // append slides to end
+                    if (e.direction == "left") {
+                        $('.carousel-item').eq(i).appendTo('.carousel-inner');
+                    }
+                    else {
+                        $('.carousel-item').eq(0).appendTo('.carousel-inner');
+                    }
+                }
+            }
+        });
+
+        $('#carouselExampleZN').on('slide.bs.carousel', function (e) {
+
+            var $e = $(e.relatedTarget);
+            var idx = $e.index();
+            var itemsPerSlide = 6;
+            var totalItems = $('.carousel-item').length;
+
+            if (idx >= totalItems - (itemsPerSlide - 1)) {
+                var it = itemsPerSlide - (totalItems - idx);
+                for (var i = 0; i < it; i++) {
+                    // append slides to end
+                    if (e.direction == "left") {
+                        $('.carousel-item').eq(i).appendTo('.carousel-inner');
+                    }
+                    else {
+                        $('.carousel-item').eq(0).appendTo('.carousel-inner');
+                    }
+                }
+            }
+        });
+
+        $('#carouselExampleTD').on('slide.bs.carousel', function (e) {
+
+            var $e = $(e.relatedTarget);
+            var idx = $e.index();
+            var itemsPerSlide = 6;
+            var totalItems = $('.carousel-item').length;
+
+            if (idx >= totalItems - (itemsPerSlide - 1)) {
+                var it = itemsPerSlide - (totalItems - idx);
+                for (var i = 0; i < it; i++) {
+                    // append slides to end
+                    if (e.direction == "left") {
+                        $('.carousel-item').eq(i).appendTo('.carousel-inner');
+                    }
+                    else {
+                        $('.carousel-item').eq(0).appendTo('.carousel-inner');
+                    }
+                }
+            }
+        });
+
+
+    </script>
+
+</body>
+
+</html>
